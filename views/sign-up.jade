@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h1(id='title') Register
+    Form(method='POST' action='/sign-up')
+      fieldset
+        legend Registration Form
+        br
+        label Email:
+        input(type='text' id='email' name='email')
+        br
+        br
+        label Password:
+        input(type='password' id='password' name='password')
+        br
+        br
+        label Password Confirmation:
+        input(type='password' id='passConfirmation' name='passConfirmation')
+        br
+        input(type='submit' id='registerBtn' value='Register')
